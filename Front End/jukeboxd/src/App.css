@@ -1,0 +1,1567 @@
+#root {
+	width: 100dvw;
+	min-height: 100vh;
+	background-color: #161b2c;
+	/* background-image: linear-gradient(180deg, #20272e 0%, #1c0a22 100%); */
+	color: #c0fcf7;
+}
+#loginPage {
+	height: calc(100vh - 78px);
+	background-image: url("/public/imgs/loginBg3fade.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.navBg {
+	background-color: #0c1222;
+}
+.jukeLink {
+	color: rgba(255, 255, 255, 0.5) !important;
+}
+.jukeLink:hover {
+	color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.active {
+	color: white !important;
+}
+#navbar {
+	background-color: #0c1222;
+	z-index: 9999;
+}
+#navbarStore {
+	background-color: #191919;
+	z-index: 9999;
+}
+#navbarEvent {
+	background-color: #3d2038;
+	position: relative;
+	z-index: 9999;
+}
+.gradientHomeBg {
+	background-image: linear-gradient(180deg, #79042f 0%, #1c0a22 100%) !important;
+}
+.homeBgGray {
+	background-color: linear-gradient(180deg, #20272e 0%, #1c0a22 100%) !important;
+}
+
+.innerCircle {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 2rem;
+	border-radius: 50%;
+	background-color: #14181c;
+}
+.vinyl {
+	border: 1px solid rgba(18, 17, 17, 0.737);
+	border-radius: 50%;
+}
+.vinyl-container.vinyl {
+	cursor: pointer;
+	opacity: 0.8;
+	transition: opacity 0.3s ease-in-out;
+}
+.circle-container {
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	rotate: 45deg;
+	transform-origin: top left;
+}
+.z-max {
+	max-height: 80%;
+}
+#cartMobile {
+	position: fixed;
+	top: 15%;
+	right: 3%;
+	background-color: #191919;
+	border-radius: 50%;
+	padding: 0.3rem 0.5rem;
+	z-index: 9999;
+}
+#cartMobile i {
+	font-size: 1.3rem;
+}
+.scratch {
+	position: absolute;
+	background-color: transparent;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 80%;
+	height: 80%;
+	border: 2px solid #1f262cc8;
+	border-color: #1f262cc8 transparent transparent transparent;
+	border-radius: 50%/50% 50% 0 0;
+	overflow: hidden;
+}
+.outside-circle {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 30%;
+	height: 30%;
+	border: 1px solid #1f262cc8;
+	border-radius: 50%;
+	background-color: transparent;
+}
+.albumCardVinyl {
+	cursor: pointer;
+}
+@keyframes spin {
+	0% {
+		rotate: 45deg;
+	}
+	100% {
+		rotate: -325deg;
+	}
+}
+.container {
+	max-width: 124rem;
+	padding: 4rem 1rem;
+	margin: 0 auto;
+}
+
+.heading {
+	padding: 1rem 0;
+	font-size: 3.5rem;
+	text-align: center;
+}
+.swiper_container {
+	height: 28rem;
+	padding: 2rem 0;
+	position: relative;
+}
+
+.swiper-slide {
+	width: 18rem !important;
+	height: 18rem !important;
+	position: relative;
+}
+
+.swiper-slide img {
+	width: 18rem !important;
+	height: 18rem !important;
+	border-radius: 50%;
+	object-fit: cover;
+}
+@media (max-width: 1399px) {
+	.swiper_container {
+		height: 22rem;
+	}
+	.swiper-slide {
+		width: 14rem !important;
+		height: 14rem !important;
+	}
+	.swiper-slide img {
+		width: 14rem !important;
+		height: 14rem !important;
+	}
+	.circle-container {
+		width: 250px;
+		height: 250px;
+	}
+	.innerCircle {
+		padding: 2.2rem;
+	}
+	.outside-circle {
+		width: 100px;
+		height: 100px;
+	}
+}
+@media (max-width: 1199px) {
+	.swiper_container {
+		height: 20rem;
+	}
+	.swiper-slide {
+		width: 13rem !important;
+		height: 13rem !important;
+	}
+	.swiper-slide img {
+		width: 13rem !important;
+		height: 13rem !important;
+	}
+	.circle-container {
+		width: 225px;
+		height: 225px;
+	}
+	.innerCircle {
+		padding: 2rem;
+	}
+	.outside-circle {
+		width: 90px;
+		height: 90px;
+	}
+}
+@media (max-width: 991px) {
+	.swiper_container {
+		height: 18rem;
+	}
+	.swiper-slide {
+		width: 12rem !important;
+		height: 12rem !important;
+	}
+	.swiper-slide img {
+		width: 12rem !important;
+		height: 12rem !important;
+	}
+	.circle-container {
+		width: 210px;
+		height: 210px;
+	}
+	.innerCircle {
+		padding: 1.7rem;
+	}
+	.outside-circle {
+		width: 80px;
+		height: 80px;
+	}
+}
+@media (max-width: 767px) {
+	.swiper_container {
+		height: 15rem;
+	}
+	.swiper-slide {
+		width: 10rem !important;
+		height: 10rem !important;
+	}
+	.swiper-slide img {
+		width: 10rem !important;
+		height: 10rem !important;
+	}
+	.circle-container {
+		width: 180px;
+		height: 180px;
+	}
+	.innerCircle {
+		padding: 1.3rem;
+	}
+	.outside-circle {
+		width: 60px;
+		height: 60px;
+	}
+}
+@media (max-width: 500px) {
+	.swiper_container {
+		height: 12.5rem;
+	}
+	.swiper-slide {
+		width: 8rem !important;
+		height: 8rem !important;
+	}
+	.swiper-slide img {
+		width: 8rem !important;
+		height: 8rem !important;
+	}
+	.circle-container {
+		width: 130px;
+		height: 130px;
+	}
+	.innerCircle {
+		padding: 1.2rem;
+	}
+	.outside-circle {
+		width: 50px;
+		height: 50px;
+	}
+}
+@media (min-width: 1400px) {
+	.swiper_container {
+		height: 24rem;
+	}
+	.swiper-slide {
+		width: 16rem !important;
+		height: 16rem !important;
+	}
+	.swiper-slide img {
+		width: 16rem !important;
+		height: 16rem !important;
+	}
+	.circle-container {
+		width: 280px;
+		height: 280px;
+	}
+	.innerCircle {
+		padding: 2.5rem;
+	}
+	.outside-circle {
+		width: 120px;
+		height: 120px;
+	}
+}
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+	display: none;
+}
+
+.slider-controler {
+	position: relative;
+	bottom: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.slider-controler .swiper-button-next {
+	left: 69.5% !important;
+	transform: translateX(-58%) !important;
+}
+@media (max-width: 1399px) {
+	.slider-controler .swiper-button-next {
+		left: 60% !important;
+		transform: translate(70%, 12.5%) !important;
+	}
+}
+@media (max-width: 1199px) {
+	.slider-controler .swiper-button-next {
+		left: 70% !important;
+		transform: translate(-50%, 13%) !important;
+	}
+}
+@media (max-width: 991px) {
+	.slider-controler .swiper-button-next {
+		left: 80% !important;
+		transform: translate(-70%, 12.75%) !important;
+	}
+}
+@media (max-width: 450px) {
+	.slider-controler .swiper-button-next {
+		left: 80% !important;
+		transform: translateX(-80%) !important;
+	}
+}
+@media (min-width: 1400px) {
+	.slider-controler .swiper-button-next {
+		left: 60% !important;
+		transform: translate(40%, 12.5%) !important;
+	}
+}
+@media (max-width: 1399px) {
+	.slider-controler .swiper-button-prev {
+		left: 40% !important;
+		transform: translate(-170%, 12.5%) !important;
+	}
+}
+@media (max-width: 1199px) {
+	.slider-controler .swiper-button-prev {
+		left: 30% !important;
+		transform: translate(-50%, 13%) !important;
+	}
+}
+@media (max-width: 991px) {
+	.slider-controler .swiper-button-prev {
+		left: 20% !important;
+		transform: translate(-30%, 12.75%) !important;
+	}
+}
+
+@media (max-width: 450px) {
+	.slider-controler .swiper-button-prev {
+		left: 20% !important;
+		transform: translateX(-20%) !important;
+	}
+}
+@media (min-width: 1400px) {
+	.slider-controler .swiper-button-prev {
+		left: 40% !important;
+		transform: translate(-140%, 12.5%) !important;
+	}
+}
+
+.slider-controler .slider-arrow {
+	background: var(--white);
+	width: 3.5rem;
+	height: 3.5rem;
+	border-radius: 50%;
+	left: 30%;
+	transform: translateX(-42%);
+	filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+}
+
+.slider-controler .slider-arrow ion-icon {
+	font-size: 2rem;
+	color: #222224;
+}
+
+.slider-controler .slider-arrow::after {
+	content: "";
+}
+
+.swiper-pagination {
+	position: relative;
+	width: 50% !important;
+	bottom: 1rem;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+	filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+	background-color: whitesmoke !important;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+	background: var(--primary);
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+	bottom: 0 !important;
+	left: 50% !important;
+	transform: translate(-50%, 0) !important;
+}
+
+@media (min-width: 768px) {
+	.swiper-pagination {
+		top: 50% !important;
+		width: 60% !important;
+	}
+}
+.no-arrow .dropdown-toggle::after {
+	display: none !important;
+}
+.no-arrow .dropdown-menu {
+	left: -125px !important;
+}
+.info {
+	transition: display 0.5s ease-in-out;
+}
+#search {
+	width: 0;
+	opacity: 0;
+	padding: 0;
+	height: 32px;
+	transition: width 0.6s ease-in-out, opacity 0.6s ease-in-out, padding 0.6s ease-in-out;
+}
+#backdrop {
+	position: absolute;
+	opacity: 0.8;
+	top: 0;
+	right: 0;
+	left: 50%;
+	transform: translate(-50%);
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	z-index: 0;
+}
+#eventBackdrop {
+	position: absolute;
+	opacity: 0.8;
+	top: 0;
+	right: 0;
+	left: 50%;
+	transform: translate(-50%);
+	width: 0;
+	height: 0;
+	background-size: cover;
+	background-position: center;
+	z-index: 1;
+}
+.eventPageContent {
+	position: relative;
+	z-index: 2;
+}
+.jukeContainer,
+.jukeHomeContainer {
+	padding-block: 1rem;
+	padding-inline: 9rem;
+}
+.albumContent,
+.artistContent {
+	position: sticky;
+	margin-top: 5rem;
+}
+.blurred {
+	padding: 0.5rem 1rem;
+	background-color: #504252;
+	/* backdrop-filter: blur(10px); */
+	border-radius: 10px;
+}
+.openVinyl {
+	position: absolute;
+	z-index: 0;
+	top: 50%;
+	left: 0%;
+	transform: translate(86.5%, -50%);
+	transition: transform 0.5s ease-in-out;
+}
+.imgCover {
+	border-radius: 2px;
+	width: 70%;
+	height: 50%;
+	position: absolute;
+	top: 50%;
+	left: 0%;
+	transform: translate(12px, -50%);
+}
+.vinylCover,
+.vinylCover2 {
+	position: absolute;
+	width: 290px;
+	border-radius: 4px;
+	top: 50%;
+	left: 0;
+	transform: translate(19px, -50%);
+}
+#albumTitle {
+	height: 219px;
+}
+#copyright {
+	margin-top: 3rem;
+	margin-bottom: 2rem;
+}
+.vinylCard {
+	box-shadow: 0 5px 3px -5px #14181c;
+}
+
+.trackDiv {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #00c9bf;
+}
+.playDiv,
+.pauseDiv {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.playDiv {
+	display: none;
+}
+.trackCard:hover,
+.trackDiv:hover {
+	background-color: #453946c0;
+	cursor: pointer;
+}
+.trackCard:hover .trackimg {
+	opacity: 0.6;
+}
+.trackCard:hover .playDiv {
+	display: unset;
+}
+
+#genresDiv {
+	max-width: 50%;
+}
+.iconButton,
+.iconButtonArt {
+	color: rgba(255, 255, 255, 0.5) !important;
+}
+.iconButton:hover,
+.iconButtonArt:hover {
+	color: rgba(255, 255, 255, 1) !important;
+}
+.cartProdImg {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+.albumSuggest {
+	background-color: #0c1222;
+	border-radius: 10px;
+	padding: 0.5rem;
+	cursor: pointer;
+}
+#jukeBottomBar,
+#jukeStoreBottomBar,
+#jukeEventBottomBar {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: 9999;
+}
+#jukeBottomBar {
+	background-color: #0c1222;
+}
+#jukeStoreBottomBar {
+	background-color: #191919;
+}
+#jukeEventBottomBar {
+	background-color: #3d2038;
+}
+#mobileSearch {
+	position: fixed;
+	top: 1rem;
+	right: 0;
+	padding-inline: 0.2rem;
+	padding-block: 0.2rem;
+	margin-right: 1.5rem;
+	background-color: rgba(255, 255, 255, 0.183);
+	backdrop-filter: blur(8px);
+	z-index: 9999;
+}
+#searchBarMobile {
+	background-color: rgba(255, 255, 255, 0.774);
+	width: 0;
+	opacity: 0;
+	padding: 0;
+	margin: 0;
+	height: 32px;
+	transition: width 0.6s ease-in-out, opacity 0.6s ease-in-out, padding 0.6s ease-in-out;
+}
+.canvas {
+	position: fixed;
+	bottom: 75px;
+	width: 34%;
+	transition: height 0.3s ease-in-out;
+	z-index: 9998;
+}
+#profileCanvas,
+#globeCanvas,
+.JukeDropdown .dropdown-menu {
+	box-shadow: 0 0 10px 2px #0c1222, inset 0 -10px 10px -10px #0c1222;
+	background-color: #1d2339;
+}
+.JukeDropdown .dropdown-item {
+	color: #c0fcf7;
+}
+.JukeDropdown .dropdown-item:hover {
+	background-color: #0c1222;
+	color: #c0fcf7;
+}
+#profileStoreCanvas,
+#globeStoreCanvas,
+.JukeStoreDropdown .dropdown-menu {
+	box-shadow: 0 0 10px 2px rgba(31, 31, 31, 0.886), inset 0 -10px 10px -10px #0c1222;
+	background-color: #292929;
+}
+.JukeStoreDropdown .dropdown-item {
+	color: #c0fcf7;
+}
+.JukeStoreDropdown .dropdown-item:hover {
+	background-color: #191919;
+	color: #c0fcf7;
+}
+#profileEventCanvas,
+#globeEventCanvas,
+.JukeEventDropdown .dropdown-menu {
+	box-shadow: 0 0 10px 2px rgba(31, 31, 31, 0.886), inset 0 -10px 10px -10px #0c1222;
+	background-color: #4b2745;
+}
+.JukeEventDropdown .dropdown-item {
+	color: #c0fcf7;
+}
+.JukeEventDropdown .dropdown-item:hover {
+	background-color: #3d2038;
+	color: #c0fcf7;
+}
+#profileCanvas,
+#profileStoreCanvas,
+#profileEventCanvas {
+	border-top-left-radius: 5px;
+	height: 200px;
+	right: 0;
+}
+#globeCanvas,
+#globeStoreCanvas,
+#globeEventCanvas {
+	border-top-right-radius: 5px;
+	height: 150px;
+	left: 0;
+}
+#mainLogDiv #log,
+#mainLogDiv #reg {
+	display: flex;
+	flex-direction: column-reverse;
+	border-radius: 10px;
+	box-shadow: 2px 5px 10px 2px rgba(24, 24, 24, 0.795);
+	width: 100%;
+}
+#log #inactiveLogDiv,
+#reg #inactiveLogDiv {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+#log #activeLogDiv,
+#reg #activeLogDiv {
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+@media screen and (min-width: 300px) {
+	.d-xs-none {
+		display: none !important;
+	}
+	#backdrop {
+		max-height: 300px;
+	}
+	.jukeContainer,
+	.jukeHomeContainer {
+		padding-inline: 1.5rem;
+	}
+	.albumContent,
+	.artistContent {
+		margin-top: 0.4rem;
+	}
+	.vinylCard {
+		width: 180px;
+	}
+	.vinylCover {
+		width: 135px;
+		transform: translate(9px, -50%);
+	}
+	#albumTitle {
+		height: unset !important;
+	}
+	#albumTitle h1 {
+		font-size: 1.2rem;
+	}
+	#albumTitle h2 {
+		font-size: 0.9rem;
+	}
+	#copyright {
+		font-size: 0.5rem;
+		margin-top: 3rem;
+		margin-bottom: 2rem;
+	}
+	#artistMaj {
+		margin-top: 4rem;
+	}
+	#artistImg {
+		width: 80px;
+		height: 80px;
+	}
+	#artistName {
+		margin-left: 3rem;
+	}
+	.artistInfo,
+	.infoTitle,
+	#trackName,
+	#trackDuration {
+		font-size: 0.8rem;
+	}
+	.trackCard {
+		height: 50px;
+	}
+	#artistAlbums {
+		width: 200px;
+	}
+	#albumName2 {
+		font-size: 0.8rem;
+	}
+	.iconButtonArt i {
+		font-size: 1.5rem;
+	}
+	.basicFs {
+		font-size: 0.7rem;
+	}
+	.basicTitleFs {
+		font-size: 1rem;
+	}
+	#graphDiv {
+		display: none;
+	}
+	.statCard {
+		border: 1px solid rgba(255, 255, 255, 0.5);
+		border-radius: 5px;
+		padding: 0.2rem 0.5rem;
+	}
+	.statCard span,
+	.statCard i {
+		color: rgba(255, 255, 255, 0.5);
+		font-size: 0.7rem;
+	}
+
+	/* Store */
+
+	.cartProdImgDiv {
+		width: 130px;
+		height: 130px;
+	}
+	.btnPlus {
+		border-top-left-radius: 0.25rem !important;
+		border-top-right-radius: 0.25rem !important;
+		border-bottom-left-radius: 0 !important;
+		border-bottom-right-radius: 0 !important;
+	}
+
+	.btnMinus {
+		border-top-left-radius: 0 !important;
+		border-top-right-radius: 0 !important;
+		border-bottom-left-radius: 0.25rem !important;
+		border-bottom-right-radius: 0.25rem !important;
+	}
+	#searchStore {
+		width: 50%;
+	}
+	/* Login */
+	#jukeLogo {
+		width: 125px;
+		height: 125px;
+		margin-bottom: 1.5rem;
+	}
+	#login-h2 {
+		font-size: 1.5rem;
+	}
+}
+@media screen and (min-width: 400px) {
+	/* Login */
+	#jukeLogo {
+		width: 150px;
+		height: 150px;
+		margin-bottom: 1.5rem;
+	}
+	#login-h2 {
+		font-size: 1.5rem;
+	}
+}
+
+@media screen and (min-width: 576px) {
+	.d-sm-none {
+		display: none !important;
+	}
+	#backdrop {
+		max-height: 400px;
+	}
+	.jukeContainer,
+	.jukeHomeContainer {
+		padding-inline: 2rem;
+	}
+	.albumContent,
+	.artistContent {
+		margin-top: 2.5rem;
+	}
+	.vinylCard {
+		width: 225px;
+	}
+	.vinylCover {
+		width: 165px;
+		transform: translate(10px, -50%);
+	}
+	#albumTitle h1 {
+		font-size: 1.5rem;
+	}
+	#albumTitle h2 {
+		font-size: 1rem;
+	}
+	#copyright {
+		font-size: 0.6rem;
+		margin-top: 5rem;
+	}
+	#artistMaj {
+		margin-top: 6rem;
+	}
+	#artistImg {
+		width: 100px;
+		height: 100px;
+	}
+	.artistInfo,
+	.infoTitle,
+	#trackName,
+	#trackDuration {
+		font-size: 0.9rem;
+	}
+	.trackCard {
+		height: 50px;
+	}
+	#artistAlbums {
+		width: 200px;
+	}
+	#albumName2 {
+		font-size: 1rem;
+	}
+	.artistSectionTitle {
+		font-size: 1.8rem;
+	}
+	#artistProfInfo {
+		margin-top: 2rem;
+	}
+	.iconButtonArt i {
+		font-size: 1.8rem;
+	}
+	.basicFs {
+		font-size: 0.8rem;
+	}
+	.statCard span,
+	.statCard i {
+		font-size: 0.9rem;
+	}
+	.statCard p {
+		font-size: 1.1rem;
+	}
+	/* Login */
+	#login-h2 {
+		font-size: 1.75rem;
+	}
+}
+@media screen and (min-width: 768px) {
+	.d-md-none {
+		display: none !important;
+	}
+	.d-md-unset {
+		display: block !important;
+	}
+	.navbar-expand-lg .navbar-nav {
+		flex-direction: row;
+	}
+	#backdrop {
+		max-height: 500px;
+	}
+	.jukeContainer,
+	.jukeHomeContainer {
+		padding-inline: 5rem;
+	}
+	.albumContent {
+		margin-top: 2.5rem;
+	}
+	.vinylCard {
+		width: 225px;
+	}
+	.vinylCover {
+		width: 165px;
+		transform: translate(10px, -50%);
+	}
+	.vinylCover2 {
+		width: 182px;
+		transform: translate(13px, -50%);
+	}
+	.albumCardDiv {
+		height: 200px;
+	}
+	#albumTitle h1 {
+		font-size: 1.7rem;
+	}
+	#albumTitle h2 {
+		font-size: 1.2rem;
+	}
+	#copyright {
+		font-size: 0.6rem;
+		margin-top: 4rem;
+	}
+	#artistMaj {
+		margin-top: 6rem;
+	}
+	#artistImg {
+		width: 125px;
+		height: 125px;
+	}
+	.artistInfo,
+	.infoTitle,
+	#trackName,
+	#trackDuration {
+		font-size: 1rem;
+	}
+	.trackCard {
+		height: 60px;
+	}
+	#albumName2 {
+		font-size: 1.1rem;
+	}
+	.artistSectionTitle {
+		font-size: 2rem;
+	}
+	#genresDiv {
+		max-width: unset;
+	}
+	#mainArtistSection {
+		margin-top: 8rem;
+	}
+	.iconButton i {
+		font-size: 1.2rem;
+	}
+	.iconButtonArt i {
+		font-size: 2rem;
+	}
+	.basicFs {
+		font-size: 0.9rem;
+	}
+	.statCard span,
+	.statCard i {
+		font-size: 1rem;
+	}
+	.statCard p {
+		font-size: 1.2rem;
+	}
+	#navbar,
+	#navbarStore {
+		position: sticky;
+		top: 0;
+	}
+	/* Store */
+	.btnPlus,
+	.btnMinus {
+		height: 27.59px;
+	}
+	.btnPlus {
+		border-top-left-radius: 0 !important;
+		border-top-right-radius: 0.25rem !important;
+		border-bottom-left-radius: 0 !important;
+		border-bottom-right-radius: 0.25rem !important;
+		justify-content: center;
+		align-items: center;
+	}
+	.btnMinus {
+		border-top-left-radius: 0.25rem !important;
+		border-top-right-radius: 0 !important;
+		border-bottom-left-radius: 0.25rem !important;
+		border-bottom-right-radius: 0 !important;
+		justify-content: center;
+		align-items: center;
+	}
+	.inputQuant {
+		width: 50px;
+	}
+	#searchStore {
+		width: 30%;
+	}
+	/* Login */
+	#jukeLogo {
+		width: 175px;
+		height: 175px;
+		margin-bottom: 0;
+		margin-right: 1.5rem;
+	}
+	#login-h2 {
+		font-size: 1.8rem;
+	}
+	#loginButton i {
+		margin-right: 0.8rem;
+	}
+	/* Bottom Bar */
+	#jukeBottomBar,
+	#jukeStoreBottomBar,
+	#jukeEventBottomBar,
+	#mobileSearch,
+	#searchBarMobile,
+	#cartMobile {
+		display: none !important;
+	}
+	#mainLogDiv #log {
+		flex-direction: row;
+	}
+	#activeLogDiv,
+	#inactiveLogDiv {
+		width: 50%;
+	}
+	#reg #activeLogDiv,
+	#log #inactiveLogDiv {
+		border-top-right-radius: 10px;
+		border-top-left-radius: 0px;
+		border-bottom-right-radius: 10px;
+		border-bottom-left-radius: 0px;
+	}
+	#reg #inactiveLogDiv,
+	#log #activeLogDiv {
+		border-top-right-radius: 0px;
+		border-top-left-radius: 10px;
+		border-bottom-right-radius: 0px;
+		border-bottom-left-radius: 10px;
+	}
+	#mainLogDiv #reg {
+		flex-direction: row-reverse;
+	}
+}
+@media screen and (min-width: 992px) {
+	.d-lg-none {
+		display: none !important;
+	}
+	#backdrop {
+		max-height: 600px;
+	}
+	.jukeContainer,
+	.jukeHomeContainer {
+		padding-inline: 5rem;
+	}
+	.albumContent {
+		margin-top: 4rem;
+	}
+	/* .openVinyl {
+		transform: translate(70%, -50%);
+	} */
+	.imgCover {
+		width: 150px;
+		height: 150px;
+		transform: translate(0, -50%);
+	}
+	.vinylCard {
+		width: 300px;
+	}
+	.vinylCover {
+		width: 216px;
+		transform: translate(14px, -50%);
+	}
+	.vinylCover2 {
+		width: 230px;
+		transform: translate(15px, -50%);
+	}
+	.albumCardDiv {
+		height: 250px;
+	}
+	#albumTitle h1 {
+		font-size: 1.9rem;
+	}
+	#albumTitle h2 {
+		font-size: 1.5rem;
+	}
+	#copyright {
+		font-size: 0.7rem;
+		margin-top: 4rem;
+		margin-bottom: 3rem;
+	}
+	#artistMaj {
+		margin-top: 12rem;
+	}
+	#artistImg {
+		width: 130px;
+		height: 130px;
+	}
+	.artistInfo,
+	.infoTitle,
+	#trackName,
+	#trackDuration {
+		font-size: 1.2rem;
+	}
+	.trackCard {
+		height: 80px;
+	}
+	#albumName2 {
+		font-size: 1.1rem;
+	}
+	.artistSectionTitle {
+		font-size: 2.2rem;
+	}
+	#topTracks,
+	#artistAlbums {
+		margin-top: 4rem;
+	}
+	.iconButton i {
+		font-size: 1.4rem;
+	}
+	.iconButtonArt i {
+		font-size: 2rem;
+	}
+	.basicFs {
+		font-size: 1rem;
+	}
+	#graphDiv {
+		display: unset;
+	}
+	.statCard span,
+	.statCard i {
+		font-size: 1.2rem;
+	}
+	.statCard p {
+		font-size: 1.4rem;
+	}
+	.col-lg-7 {
+		flex: 0 0 auto !important;
+		width: 55% !important;
+	}
+	/* Store */
+	.cartProdImgDiv {
+		width: 150px;
+		height: 150px;
+	}
+	.btnPlus,
+	.btnMinus {
+		height: 30px;
+	}
+	/* Login */
+	#jukeLogo {
+		width: 200px;
+		height: 200px;
+		margin-bottom: 0;
+		margin-right: 2rem;
+	}
+	#login-h2 {
+		font-size: 2rem;
+	}
+	#loginButton i {
+		margin-right: 0.8rem;
+	}
+}
+@media screen and (min-width: 1400px) {
+	.d-xl-none {
+		display: none !important;
+	}
+	#backdrop {
+		max-height: 100%;
+	}
+	.jukeContainer {
+		padding-inline: 14rem;
+	}
+	.albumContent {
+		margin-top: 8rem;
+	}
+	/* .openVinyl {
+		transform: translate(0, -50%);
+	} */
+	.imgCover {
+		width: 280px;
+		height: 90%;
+		transform: translate(4%, -50%);
+	}
+	.vinylCard {
+		width: 400px;
+	}
+	.vinylCover {
+		width: 292px;
+		transform: translate(16px, -50%);
+	}
+	#albumTitle {
+		margin-bottom: 4rem;
+	}
+	#albumTitle h1 {
+		font-size: 4rem;
+		line-height: 4rem;
+		height: 124px;
+		text-overflow: ellipsis;
+		overflow: hidden;
+	}
+	#albumTitle h2 {
+		font-size: 2rem;
+	}
+	#copyright {
+		font-size: 0.9rem;
+		margin-top: 3rem;
+		margin-bottom: 5rem;
+	}
+	#artistMaj {
+		margin-top: 30rem;
+	}
+	#artistImg {
+		width: 150px;
+		height: 150px;
+	}
+	.artistInfo,
+	.infoTitle,
+	#trackName,
+	#trackDuration {
+		font-size: 1.3rem;
+	}
+	.trackCard {
+		height: 90px;
+	}
+	#albumName2 {
+		font-size: 1.1rem;
+	}
+	.artistSectionTitle {
+		font-size: 2.8rem;
+	}
+	#topTracks,
+	#artistAlbums {
+		margin-top: 5rem;
+	}
+	.iconButton i {
+		font-size: 1.5rem;
+	}
+	.iconButtonArt i {
+		font-size: 2.5rem;
+	}
+	.albumContent {
+		margin-top: 10rem;
+	}
+	/* Store */
+	.cartProdImgDiv {
+		width: 150px;
+		height: 150px;
+	}
+	/* Login */
+	#jukeLogo {
+		width: 220px;
+		height: 220px;
+		margin-bottom: 0;
+		margin-right: 3rem;
+	}
+	#login-h2 {
+		font-size: 2.2rem;
+	}
+	#loginButton i {
+		margin-right: 0.8rem;
+	}
+}
+@media screen and (min-width: 1660px) {
+	#artistMaj {
+		margin-top: 25rem;
+	}
+	.albumContent {
+		margin-top: 6rem;
+	}
+	/* Login */
+	#jukeLogo {
+		width: 250px;
+		height: 250px;
+		margin-bottom: 0;
+		margin-right: 5rem;
+	}
+	#login-h2 {
+		font-size: 2.5rem;
+	}
+	#loginButton i {
+		margin-right: 0.8rem;
+	}
+}
+@media screen and (min-width: 1800px) {
+	.albumContent {
+		margin-top: 6rem;
+	}
+}
+.loader {
+	display: flex;
+	align-items: center;
+}
+
+.bar {
+	display: inline-block;
+	width: 2px;
+	height: 12px;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 10px;
+	animation: scale-up4 1s linear infinite;
+}
+
+.bar:nth-child(2) {
+	height: 22.5px;
+	margin: 0 5px;
+	animation-delay: 0.25s;
+}
+
+.bar:nth-child(3) {
+	animation-delay: 0.5s;
+}
+
+@keyframes scale-up4 {
+	20% {
+		background-color: #ffff;
+		transform: scaleY(1.5);
+	}
+
+	40% {
+		transform: scaleY(1);
+	}
+}
+
+/* ---------- */
+.grid {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	/* 0.6366047745 */
+	grid-auto-rows: calc(100vw / 18.85);
+	grid-gap: 10px;
+	grid-auto-flow: dense;
+}
+
+.grid-item {
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+}
+
+.grid-item.wide {
+	grid-column-end: span 2;
+	grid-row-end: span 2;
+}
+
+.grid-item.tall {
+	grid-column-end: span 3;
+	grid-row-end: span 3;
+}
+.navCard {
+	padding-block: 0.5rem;
+}
+.navCard:hover {
+	background-color: #4539469c;
+	cursor: pointer;
+}
+.navCard:hover img {
+	opacity: 0.6;
+}
+/* --------------- STORE --------------- */
+.productInfo {
+	position: absolute;
+	bottom: 3%;
+	left: 50%;
+	transform: translate(-50%, 81%);
+	transition: transform 0.3s ease-in-out;
+	width: 100%;
+	padding: 1rem;
+	background-color: rgba(230, 229, 229, 0.7);
+	backdrop-filter: blur(5px);
+}
+.show-info {
+	transform: translate(-50%, 10%);
+}
+#mainLogDiv {
+	min-height: calc(100vh - 150px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.colorBgGradient {
+	background-image: linear-gradient(145deg, #161b2c 0%, #0c1222 100%);
+}
+/* .storeBgGradient {
+	background-image: linear-gradient(145deg, #361f20 0%, #2b191a 100%);
+} */
+.storeBgGradient {
+	background-image: linear-gradient(145deg, #242424 0%, #141414 100%);
+}
+.jukeColorPrimary {
+	color: #0c1222 !important;
+}
+.jukeColorSecondary {
+	color: #161b2c !important;
+}
+.jukeButtonPrimary {
+	background-color: #0c1222 !important;
+	color: #c0fcf7 !important;
+}
+.jukeButtonPrimary:hover {
+	background-color: #212841 !important;
+}
+.jukeButtonPrimaryOutline {
+	background-color: transparent !important;
+	color: #0c1222 !important;
+	border: 1px solid #0c1222 !important;
+}
+.jukeButtonPrimaryOutline:hover {
+	background-color: #0c1222 !important;
+	color: #c0fcf7 !important;
+}
+.jukeBtnPrime {
+	background-color: #0c1222 !important;
+	color: #c0fcf7 !important;
+	border-color: #0c1222 !important;
+}
+.jukeBtnPrime:hover {
+	background-color: transparent !important;
+	color: #0c1222 !important;
+	border-color: #0c1222 !important;
+}
+.jukeWhite {
+	color: rgba(255, 255, 255, 0.5) !important;
+}
+.jukeBtnWhite {
+	outline: none !important;
+	background-color: rgba(255, 255, 255, 0.75) !important;
+	color: #0c1222 !important;
+	border: 1px solid #0c1222 !important;
+}
+.jukeBtnWhiteOutline {
+	background-color: transparent !important;
+	color: rgba(255, 255, 255, 0.5) !important;
+	border: 1px solid rgba(255, 255, 255, 0.5) !important;
+}
+.jukeBtnWhiteOutline:hover {
+	background-color: rgba(255, 255, 255, 0.75) !important;
+	color: #0c1222 !important;
+}
+.roundedLeft {
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+.roundedRight {
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.btnPlusStandard,
+.btnMinusStandard {
+	height: 30px;
+}
+.btnPlusStandard {
+	border-top-left-radius: 0 !important;
+	border-top-right-radius: 0.25rem !important;
+	border-bottom-left-radius: 0 !important;
+	border-bottom-right-radius: 0.25rem !important;
+}
+.btnMinusStandard {
+	border-top-left-radius: 0.25rem !important;
+	border-top-right-radius: 0 !important;
+	border-bottom-left-radius: 0.25rem !important;
+	border-bottom-right-radius: 0 !important;
+}
+.productStoreCard {
+	position: relative;
+	height: 350px;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+#cartBadge {
+	position: absolute;
+	font-size: 0.5rem;
+	top: -5px;
+	right: -15px;
+}
+#options {
+	background-color: #141414;
+}
+.option:hover {
+	cursor: pointer;
+	background-color: #242424;
+}
+.activeOption {
+	cursor: pointer;
+	background-color: #242424;
+	box-shadow: inset 5px 5px 7px black, inset -1px -1px 7px rgb(124, 124, 124);
+}
+.eventImg {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.eventCard {
+	border: 1px solid #4b2745;
+	border-radius: 10px;
+}
+.eventDateDiv {
+	border-right: 1px solid #4b2745;
+	padding: 1rem;
+	width: 80px;
+}
+.eventInfoDiv {
+	padding: 1rem;
+}
+.eventButtonDiv {
+	padding-right: 1rem;
+}
+.eventButton,
+.eventButton2 {
+	background-color: #4b2745 !important;
+	border: 1px solid #4b2745 !important;
+	color: #c0fcf7 !important;
+
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out !important;
+}
+.eventButton:hover {
+	background-color: transparent !important;
+	border: 1px solid #4b2745 !important;
+	color: #4b2745 !important;
+}
+.eventButton2:hover {
+	background-color: #c0fcf7 !important;
+	border: 1px solid #4b2745 !important;
+	color: #4b2745 !important;
+}
+#eventDetailsDiv {
+	margin-top: 2rem;
+	padding: 1rem;
+	border: 1px solid #4b2745;
+	border-radius: 10px;
+}
+#outerEventImgDiv {
+	margin-bottom: 1rem;
+}
+@media screen and (min-width: 576px) {
+	#outerEventImgDiv {
+		margin-bottom: 0;
+		margin-right: 1rem;
+	}
+}
+.upcomingCard {
+	padding-block: 0.5rem;
+	border-radius: 5px;
+}
+.upcomingCard:hover {
+	cursor: pointer;
+	background-color: rgba(255, 255, 255, 0.237);
+	backdrop-filter: blur(5px);
+}

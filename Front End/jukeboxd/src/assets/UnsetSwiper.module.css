@@ -1,0 +1,109 @@
+/* Events */
+.swiper-container.swiper-container,
+.swiper-slide.swiper-slide,
+.swiper-slide.swiper-slide img,
+.swiper-slide-shadow-left.swiper-slide-shadow-left,
+.swiper-slide-shadow-right.swiper-slide-shadow-right,
+.slider-controler.slider-controler,
+.slider-controler.slider-controler .swiper-button-next,
+.slider-controler.slider-controler .swiper-button-prev,
+.slider-controler.slider-controler .slider-arrow,
+.slider-controler.slider-controler .slider-arrow ion-icon,
+.slider-controler.slider-controler .slider-arrow::after,
+.swiper-pagination.swiper-pagination,
+.swiper-pagination.swiper-pagination .swiper-pagination-bullet,
+.swiper-pagination.swiper-pagination .swiper-pagination-bullet-active,
+.swiper-pagination-bullets.swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-horizontal,
+.no-arrow.no-arrow .dropdown-toggle::after,
+.no-arrow.no-arrow .dropdown-menu {
+	all: unset !important;
+}
+
+@media (max-width: 1399px) {
+	.swiper-container,
+	.swiper-slide,
+	.swiper-slide img {
+		all: unset !important;
+	}
+}
+
+@media (max-width: 1199px) {
+	.swiper-container,
+	.swiper-slide,
+	.swiper-slide img {
+		all: unset !important;
+	}
+}
+
+@media (max-width: 991px) {
+	.swiper-container,
+	.swiper-slide,
+	.swiper-slide img {
+		all: unset !important;
+	}
+}
+
+@media (max-width: 767px) {
+	.swiper-container,
+	.swiper-slide,
+	.swiper-slide img {
+		all: unset !important;
+	}
+}
+
+@media (max-width: 500px) {
+	.swiper-container,
+	.swiper-slide,
+	.swiper-slide img {
+		all: unset !important;
+	}
+}
+
+@media (min-width: 1400px) {
+	.swiper-container,
+	.swiper-slide,
+	.swiper-slide img {
+		all: unset !important;
+	}
+}
+
+@media (max-width: 1399px) {
+	.slider-controler .swiper-button-next,
+	.slider-controler .swiper-button-prev {
+		all: unset !important;
+	}
+}
+
+@media (max-width: 1199px) {
+	.slider-controler .swiper-button-next,
+	.slider-controler .swiper-button-prev {
+		all: unset !important;
+	}
+}
+
+@media (max-width: 991px) {
+	.slider-controler .swiper-button-next,
+	.slider-controler .swiper-button-prev {
+		all: unset !important;
+	}
+}
+
+@media (max-width: 450px) {
+	.slider-controler .swiper-button-next,
+	.slider-controler .swiper-button-prev {
+		all: unset !important;
+	}
+}
+
+@media (min-width: 1400px) {
+	.slider-controler .swiper-button-next,
+	.slider-controler .swiper-button-prev {
+		all: unset !important;
+	}
+}
+
+@media (min-width: 768px) {
+	.swiper-pagination {
+		all: unset !important;
+	}
+}

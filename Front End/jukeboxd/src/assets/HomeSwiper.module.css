@@ -1,0 +1,355 @@
+.innerCircle {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 2rem;
+	border-radius: 50%;
+	background-color: #14181c;
+}
+.circleContainer {
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	rotate: 45deg;
+	transform-origin: top left;
+}
+.scratch {
+	position: absolute;
+	background-color: transparent;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 80%;
+	height: 80%;
+	border: 2px solid #1f262cc8;
+	border-color: #1f262cc8 transparent transparent transparent;
+	border-radius: 50%/50% 50% 0 0;
+	overflow: hidden;
+}
+.outsideCircle {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 30%;
+	height: 30%;
+	border: 1px solid #1f262cc8;
+	border-radius: 50%;
+	background-color: transparent;
+}
+
+.swiperContainer {
+	height: 28rem !important;
+	padding: 2rem 0 !important;
+	position: relative !important;
+}
+
+.swiperSlide {
+	width: 18rem !important;
+	height: 18rem !important;
+	position: relative !important;
+}
+
+.swiperSlide img {
+	width: 18rem !important;
+	height: 18rem !important;
+	border-radius: 50% !important;
+	object-fit: cover !important;
+}
+
+@media (max-width: 1399px) {
+	.swiperContainer {
+		height: 22rem;
+	}
+	.swiperSlide {
+		width: 14rem !important;
+		height: 14rem !important;
+	}
+	.swiperSlide img {
+		width: 14rem !important;
+		height: 14rem !important;
+	}
+	.circle-container {
+		width: 250px;
+		height: 250px;
+	}
+	.innerCircle {
+		padding: 2.2rem;
+	}
+	.outsideCircle {
+		width: 100px;
+		height: 100px;
+	}
+}
+
+@media (max-width: 1199px) {
+	.swiperContainer {
+		height: 20rem;
+	}
+	.swiperSlide {
+		width: 13rem !important;
+		height: 13rem !important;
+	}
+	.swiperSlide img {
+		width: 13rem !important;
+		height: 13rem !important;
+	}
+	.circleContainer {
+		width: 225px;
+		height: 225px;
+	}
+	.innerCircle {
+		padding: 2rem;
+	}
+	.outsideCircle {
+		width: 90px;
+		height: 90px;
+	}
+}
+
+@media (max-width: 991px) {
+	.swiperContainer {
+		height: 18rem;
+	}
+	.swiperSlide {
+		width: 12rem !important;
+		height: 12rem !important;
+	}
+	.swiperSlide img {
+		width: 12rem !important;
+		height: 12rem !important;
+	}
+	.circleContainer {
+		width: 210px;
+		height: 210px;
+	}
+	.innerCircle {
+		padding: 1.7rem;
+	}
+	.outsideCircle {
+		width: 80px;
+		height: 80px;
+	}
+}
+
+@media (max-width: 767px) {
+	.swiperContainer {
+		height: 15rem;
+	}
+	.swiperSlide {
+		width: 10rem !important;
+		height: 10rem !important;
+	}
+	.swiperSlide img {
+		width: 10rem !important;
+		height: 10rem !important;
+	}
+	.circleContainer {
+		width: 180px;
+		height: 180px;
+	}
+	.innerCircle {
+		padding: 1.3rem;
+	}
+	.outsideCircle {
+		width: 60px;
+		height: 60px;
+	}
+}
+
+@media (max-width: 500px) {
+	.swiperContainer {
+		height: 12.5rem;
+	}
+	.swiperSlide {
+		width: 8rem !important;
+		height: 8rem !important;
+	}
+	.swiperSlide img {
+		width: 8rem !important;
+		height: 8rem !important;
+	}
+	.circleContainer {
+		width: 130px;
+		height: 130px;
+	}
+	.innerCircle {
+		padding: 1.2rem;
+	}
+	.outsideCircle {
+		width: 50px;
+		height: 50px;
+	}
+}
+
+@media (min-width: 1400px) {
+	.swiperContainer {
+		height: 24rem;
+	}
+	.swiperSlide {
+		width: 16rem !important;
+		height: 16rem !important;
+	}
+	.swiperSlide img {
+		width: 16rem !important;
+		height: 16rem !important;
+	}
+	.circleContainer {
+		width: 280px;
+		height: 280px;
+	}
+	.innerCircle {
+		padding: 2.5rem;
+	}
+	.outsideCircle {
+		width: 120px;
+		height: 120px;
+	}
+}
+
+.swiperSlideShadowLeft,
+.swiperSlideShadowRight {
+	display: none !important;
+}
+
+.sliderControler {
+	position: relative !important;
+	bottom: 2rem !important;
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+}
+
+.sliderControler .swiperButtonNext {
+	left: 69.5% !important;
+	transform: translateX(-58%) !important;
+}
+
+@media (max-width: 1399px) {
+	.sliderControler .swiperButtonNext {
+		left: 60% !important;
+		transform: translate(70%, 12.5%) !important;
+	}
+}
+
+@media (max-width: 1199px) {
+	.sliderControler .swiperButtonNext {
+		left: 70% !important;
+		transform: translate(-50%, 13%) !important;
+	}
+}
+
+@media (max-width: 991px) {
+	.sliderControler .swiperButtonNext {
+		left: 80% !important;
+		transform: translate(-70%, 12.75%) !important;
+	}
+}
+
+@media (max-width: 450px) {
+	.sliderControler .swiperButtonNext {
+		left: 80% !important;
+		transform: translateX(-80%) !important;
+	}
+}
+
+@media (min-width: 1400px) {
+	.sliderControler .swiperButtonNext {
+		left: 60% !important;
+		transform: translate(40%, 12.5%) !important;
+	}
+}
+
+@media (max-width: 1399px) {
+	.sliderControler .swiperButtonPrev {
+		left: 40% !important;
+		transform: translate(-170%, 12.5%) !important;
+	}
+}
+
+@media (max-width: 1199px) {
+	.sliderControler .swiperButtonPrev {
+		left: 30% !important;
+		transform: translate(-50%, 13%) !important;
+	}
+}
+
+@media (max-width: 991px) {
+	.sliderControler .swiperButtonPrev {
+		left: 20% !important;
+		transform: translate(-30%, 12.75%) !important;
+	}
+}
+
+@media (max-width: 450px) {
+	.sliderControler .swiperButtonPrev {
+		left: 20% !important;
+		transform: translateX(-20%) !important;
+	}
+}
+
+@media (min-width: 1400px) {
+	.sliderControler .swiperButtonPrev {
+		left: 40% !important;
+		transform: translate(-140%, 12.5%) !important;
+	}
+}
+
+.sliderControler .sliderArrow {
+	background: var(--white) !important;
+	width: 3.5rem !important;
+	height: 3.5rem !important;
+	border-radius: 50% !important;
+	left: 30% !important;
+	transform: translateX(-42%) !important;
+	filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1)) !important;
+}
+
+.sliderControler .sliderArrow ion-icon {
+	font-size: 2rem !important;
+	color: #222224 !important;
+}
+
+.sliderControler .sliderArrow::after {
+	content: "" !important;
+}
+
+.swiperPagination {
+	position: relative !important;
+	width: 50% !important;
+	bottom: 1rem !important;
+}
+
+.swiperPagination .swiperPaginationBullet {
+	filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1)) !important;
+	background-color: whitesmoke !important;
+}
+
+.swiperPagination .swiperPaginationBulletActive {
+	background: var(--primary) !important;
+}
+
+.swiperPaginationBullets.swiperPaginationHorizontal {
+	bottom: 0 !important;
+	left: 50% !important;
+	transform: translate(-50%, 0) !important;
+}
+
+@media (min-width: 768px) {
+	.swiperPagination {
+		top: 50% !important;
+		width: 60% !important;
+	}
+}
+
+.noArrow .dropdownToggle::after {
+	display: none !important;
+}
+
+.noArrow .dropdownMenu {
+	left: -125px !important;
+}
